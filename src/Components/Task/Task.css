@@ -1,0 +1,21 @@
+.task {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 20px;
+  border: 5px outset aqua;
+  padding: 10px;
+  margin: 10px;
+  width: 700px;
+  background-color: white;
+  border-radius: 15px;
+}
+h4 {
+  background-color: lightyellow;
+}
+span {
+  background-color: white;
+}
+h4:hover {
+  color: aqua;
+}
