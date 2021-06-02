@@ -1,13 +1,7 @@
 import { v4 as uuidv4 } from "uuid";
 import { ADD_TASK, EDIT_TASK, FILTER_TASK } from "../constants";
 const initialState = {
-  tasks: [
-    { id: uuidv4(), description: "React", isDone: false },
-
-    { id: uuidv4(), description: "Hooks", isDone: false },
-    { id: uuidv4(), description: "Router", isDone: false },
-    { id: uuidv4(), description: "Redux", isDone: false },
-  ],
+  tasks: [],
 };
 
 function tasksReducer(state = initialState, action) {

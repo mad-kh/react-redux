@@ -24,7 +24,7 @@ function Task({ taskData, index }) {
   };
   return (
     <div className="task">
-      <h4>
+      <h4 style={{ textDecoration: taskData.isDone ? "line-through" : "none" }}>
         <span>Task {index + 1}:</span>
         {taskData.description}
       </h4>
@@ -44,6 +44,7 @@ function Task({ taskData, index }) {
         </Modal.Header>
         <Form.Control
           type="text"
+          value={taskData.description}
           placeholder="Todo Add..."
           onChange={handleEdit}
         />

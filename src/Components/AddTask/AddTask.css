@@ -6,3 +6,7 @@
   width: 1000px;
   border-radius: 15px;
 }
+h1 {
+  color: darkmagenta;
+  size: unset;
+}

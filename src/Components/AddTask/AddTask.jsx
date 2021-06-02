@@ -11,13 +11,15 @@ function AddTask() {
   const dispatch = useDispatch();
   const handleSubmit = () => {
     dispatch(addTask({ description: newTask }));
+    setnewTask("");
   };
   return (
     <div>
-      <h1>Todo APP</h1>
+      <h1>ToDo App !</h1>
       <div className="inputArea">
         <Form.Control
           type="text"
+          value={newTask}
           placeholder="Todo Add..."
           onChange={handleTask}
         />
