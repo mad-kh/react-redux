@@ -5,9 +5,11 @@ import { Button } from "react-bootstrap";
 
 function ListTask() {
   const tasks = useSelector((state) => state.tasksReducer.tasks);
+  console.log(tasks);
   useEffect(() => setFilter(tasks), [tasks]);
 
   const [Filter, setFilter] = useState(tasks);
+  console.log(Filter);
   const showAreDoneClick = () => {
     setFilter(tasks.filter((task) => task.isDone === true));
   };

@@ -46,6 +46,7 @@ function Task({ taskData, index }) {
           type="text"
           placeholder="Todo Add..."
           onChange={handleEdit}
+          defaultValue={taskData.description}
         />
 
         <Modal.Footer>
