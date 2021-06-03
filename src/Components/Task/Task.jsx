@@ -44,7 +44,6 @@ function Task({ taskData, index }) {
         </Modal.Header>
         <Form.Control
           type="text"
-          value={taskData.description}
           placeholder="Todo Add..."
           onChange={handleEdit}
         />
